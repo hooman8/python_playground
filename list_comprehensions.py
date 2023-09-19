@@ -33,3 +33,7 @@ list(range(1, 5, 2))
 
 [("length", len(name)) for name in names]
 ", ".join([f"name is {name}" for name in names])
+
+
+even_squares = [num * num for num in range(6) if num % 2 == 0]
+", ".join([str(even_square) for even_square in even_squares])
