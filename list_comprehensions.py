@@ -37,3 +37,15 @@ list(range(1, 5, 2))
 
 even_squares = [num * num for num in range(6) if num % 2 == 0]
 ", ".join([str(even_square) for even_square in even_squares])
+
+squares = [num * num for num in range(6)]
+sum(squares)
+
+min(squares)
+max(squares)
+sorted(squares)
+sorted(sorted, reverse=True)
+
+lottery_numbers_string = "4, 5, 134, 10"
+list(lottery_numbers_string)
+max([int(num) for num in lottery_numbers_string.split(", ")])
