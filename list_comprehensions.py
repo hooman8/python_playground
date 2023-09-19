@@ -49,3 +49,19 @@ sorted(sorted, reverse=True)
 lottery_numbers_string = "4, 5, 134, 10"
 list(lottery_numbers_string)
 max([int(num) for num in lottery_numbers_string.split(", ")])
+
+
+# sets & dict
+{num * num for num in range(11)}
+{num: num * num for num in range(11)}
+[f"name is {name}" for name in names]
+
+
+# generator expression
+(len(name) for name in names)
+set((len(name) for name in names))
+# extra prans are optional
+set(len(name) for name in names)
+max(len(name) for name in names)
+min(len(name) for name in names)
+sum(len(name) for name in names)
