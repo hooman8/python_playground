@@ -17,3 +17,19 @@ my_num = [1, 2, 3, 4]
 list_comp = [x**2 for x in range(10) if x % 2 == 0]
 gen_comp = (x**2 for x in range(10) if x % 2 == 0)
 type(gen_comp)
+
+
+names = ["Nina", "Max", "Jimmy"]
+upper_name = []
+for name in names:
+    upper_name.append(name.upper())
+
+my_names_upper = [name.upper() for name in names]
+# call list on range to see what's inside of it
+list(range(0, 4))
+list(range(1, 5, 2))
+
+[num * num for num in range(6)]
+
+[("length", len(name)) for name in names]
+", ".join([f"name is {name}" for name in names])
